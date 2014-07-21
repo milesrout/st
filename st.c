@@ -3147,7 +3147,7 @@ xdraws(char *s, Glyph base, int x, int y, int charlen, int bytelen) {
 		 * to bright system colours [8-15]
 		 */
 		if(BETWEEN(base.fg, 0, 7))
-			fg = &dc.col[base.fg + 8];
+			fg = &dc.col[base.fg];
 
 		font = &dc.bfont;
 		frcflags = FRC_BOLD;
